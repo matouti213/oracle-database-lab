@@ -4,6 +4,12 @@
 
 \## Nombres de ramas
 
+Formato:
+
+```text
+<tipo>/<numero-issue>-<descripcion-corta>
+```
+
 
 
 Cada tarea se desarrolla en una rama creada desde main.
@@ -31,6 +37,13 @@ Utilizamos nombres breves, sin espacios y con guiones entre palabras.
 
 
 \## Mensajes de commit
+
+Formato:
+
+```text
+<tipo>(<ambito-opcional>): <descripcion>
+```
+
 
 
 
