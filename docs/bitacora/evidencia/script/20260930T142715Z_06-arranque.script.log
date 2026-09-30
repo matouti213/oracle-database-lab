@@ -1,0 +1,530 @@
+== Esperando a que oralab-26ai este healthy (max. 5 min) ==
+ intento 1: healthy
+== Estado final ==
+oralab-26ai Up 34 minutes (healthy)
+== Registro de arranque (docker logs) ==
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Wed Sep 30 13:52:52 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+CLID: P
+PDB$SEED(2):Autotune of undo retention is turned on. 
+PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+FREEPDB1(3):Autotune of undo retention is turned on. 
+FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+2026-09-30T13:52:52.158945+00:00
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-09-30T13:52:52.550258+00:00
+FREEPDB1(3):TABLE AUDSYS.AUD$UNIFIED: ADDED INTERVAL PARTITION SYS_P496 (4475) VALUES LESS THAN (TIMESTAMP' 2026-10-01 00:00:00')
+2026-09-30T13:52:52.957871+00:00
+===========================================================
+Dumping current patch information
+===========================================================
+No patches have been applied
+===========================================================
+2026-09-30T13:52:53.099368+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 409600K, new size 419840K
+2026-09-30T13:52:54.336025+00:00
+TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P656 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P657 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P660 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+2026-09-30T13:52:54.931935+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776375 whereas allowed drift is 5000000
+2026-09-30T13:52:56.960847+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776376 with drift 1000000
+2026-09-30T13:53:22.154739+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776403 whereas allowed drift is 5000000
+2026-09-30T13:53:24.184193+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776404 with drift 1000000
+2026-09-30T13:53:50.331030+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776431 whereas allowed drift is 5000000
+2026-09-30T13:53:52.366660+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776432 with drift 1000000
+2026-09-30T13:54:18.467130+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776459 whereas allowed drift is 5000000
+2026-09-30T13:54:20.506266+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776460 with drift 1000000
+2026-09-30T13:54:46.660332+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776487 whereas allowed drift is 5000000
+2026-09-30T13:54:48.700013+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776488 with drift 1000000
+2026-09-30T13:55:13.838672+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776514 whereas allowed drift is 5000000
+2026-09-30T13:55:15.872991+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776515 with drift 1000000
+2026-09-30T13:55:42.030850+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776543 whereas allowed drift is 5000000
+2026-09-30T13:55:44.072211+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776544 with drift 1000000
+2026-09-30T13:56:10.095233+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776571 whereas allowed drift is 5000000
+2026-09-30T13:56:12.125708+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776572 with drift 1000000
+2026-09-30T13:56:38.291877+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776599 whereas allowed drift is 5000000
+2026-09-30T13:56:40.331078+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776600 with drift 1000000
+2026-09-30T13:57:05.411252+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776626 whereas allowed drift is 5000000
+2026-09-30T13:57:07.448323+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776627 with drift 1000000
+2026-09-30T13:57:33.529105+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776654 whereas allowed drift is 5000000
+2026-09-30T13:57:35.562562+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776655 with drift 1000000
+2026-09-30T13:58:01.551049+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776682 whereas allowed drift is 5000000
+2026-09-30T13:58:03.586914+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776683 with drift 1000000
+2026-09-30T13:58:29.677520+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776710 whereas allowed drift is 5000000
+2026-09-30T13:58:31.714665+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776711 with drift 1000000
+2026-09-30T13:58:56.816550+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776737 whereas allowed drift is 5000000
+2026-09-30T13:58:58.856023+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776738 with drift 1000000
+2026-09-30T13:59:25.003602+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776766 whereas allowed drift is 5000000
+2026-09-30T13:59:27.044811+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776767 with drift 1000000
+2026-09-30T13:59:53.173798+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776794 whereas allowed drift is 5000000
+2026-09-30T13:59:55.207976+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776795 with drift 1000000
+2026-09-30T14:00:20.258378+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776821 whereas allowed drift is 5000000
+2026-09-30T14:00:22.294583+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776822 with drift 1000000
+2026-09-30T14:00:48.407249+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776849 whereas allowed drift is 5000000
+2026-09-30T14:00:50.440883+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776850 with drift 1000000
+2026-09-30T14:01:16.477316+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776877 whereas allowed drift is 5000000
+2026-09-30T14:01:18.522802+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776878 with drift 1000000
+2026-09-30T14:01:44.874222+00:00
+--ATTENTION--
+Time stalled at 3174834688
+2026-09-30T14:01:45.466433+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776905 with drift 1000000
+2026-09-30T14:02:08.098353+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 624640K, new size 655360K
+2026-09-30T14:02:11.493389+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776932 whereas allowed drift is 5000000
+2026-09-30T14:02:13.536089+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776933 with drift 1000000
+2026-09-30T14:02:39.638210+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776960 whereas allowed drift is 5000000
+2026-09-30T14:02:41.672488+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776961 with drift 1000000
+2026-09-30T14:03:07.684788+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790776988 whereas allowed drift is 5000000
+2026-09-30T14:03:09.713882+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790776989 with drift 1000000
+2026-09-30T14:03:34.808831+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777015 whereas allowed drift is 5000000
+2026-09-30T14:03:36.838578+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777016 with drift 1000000
+2026-09-30T14:04:02.931308+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777044 whereas allowed drift is 5000000
+2026-09-30T14:04:05.971131+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777045 with drift 1000000
+2026-09-30T14:04:30.972042+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777072 whereas allowed drift is 5000000
+2026-09-30T14:04:33.009314+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777073 with drift 1000000
+2026-09-30T14:04:59.168354+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777100 whereas allowed drift is 5000000
+2026-09-30T14:05:01.220108+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777101 with drift 1000000
+2026-09-30T14:05:26.167669+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777127 whereas allowed drift is 5000000
+2026-09-30T14:05:28.211204+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777128 with drift 1000000
+2026-09-30T14:05:54.274463+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777155 whereas allowed drift is 5000000
+2026-09-30T14:05:56.318752+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777156 with drift 1000000
+2026-09-30T14:06:22.245942+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777183 whereas allowed drift is 5000000
+2026-09-30T14:06:24.289356+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777184 with drift 1000000
+2026-09-30T14:06:49.209091+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777210 whereas allowed drift is 5000000
+2026-09-30T14:06:51.236868+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777211 with drift 1000000
+2026-09-30T14:07:17.275266+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777238 whereas allowed drift is 5000000
+2026-09-30T14:07:19.320030+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777239 with drift 1000000
+2026-09-30T14:07:45.357871+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777266 whereas allowed drift is 5000000
+2026-09-30T14:07:47.396995+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777267 with drift 1000000
+2026-09-30T14:08:13.507305+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777294 whereas allowed drift is 5000000
+2026-09-30T14:08:15.542454+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777295 with drift 1000000
+2026-09-30T14:08:40.522887+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777321 whereas allowed drift is 5000000
+2026-09-30T14:08:42.559128+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777322 with drift 1000000
+2026-09-30T14:09:08.661252+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777349 whereas allowed drift is 5000000
+2026-09-30T14:09:10.709787+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777350 with drift 1000000
+2026-09-30T14:09:36.715898+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777377 whereas allowed drift is 5000000
+2026-09-30T14:09:38.756821+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777378 with drift 1000000
+2026-09-30T14:10:03.846769+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777405 whereas allowed drift is 5000000
+2026-09-30T14:10:06.896199+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777406 with drift 1000000
+2026-09-30T14:10:31.835742+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777433 whereas allowed drift is 5000000
+2026-09-30T14:10:34.883422+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777434 with drift 1000000
+2026-09-30T14:10:59.876140+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777461 whereas allowed drift is 5000000
+2026-09-30T14:11:02.929964+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777462 with drift 1000000
+2026-09-30T14:11:24.144107+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 655360K, new size 665600K
+2026-09-30T14:11:24.157000+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 419840K, new size 440320K
+2026-09-30T14:11:26.843790+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777488 whereas allowed drift is 5000000
+2026-09-30T14:11:29.894963+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777489 with drift 1000000
+2026-09-30T14:11:54.843837+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777516 whereas allowed drift is 5000000
+2026-09-30T14:11:57.899773+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777517 with drift 1000000
+2026-09-30T14:12:22.819348+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777544 whereas allowed drift is 5000000
+2026-09-30T14:12:25.872420+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777545 with drift 1000000
+2026-09-30T14:12:50.856093+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777572 whereas allowed drift is 5000000
+2026-09-30T14:12:53.896490+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777573 with drift 1000000
+2026-09-30T14:13:17.939694+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777599 whereas allowed drift is 5000000
+2026-09-30T14:13:20.983940+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777600 with drift 1000000
+2026-09-30T14:13:46.031957+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777627 whereas allowed drift is 5000000
+2026-09-30T14:13:48.068070+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777628 with drift 1000000
+2026-09-30T14:14:14.142232+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777655 whereas allowed drift is 5000000
+2026-09-30T14:14:16.190406+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777656 with drift 1000000
+2026-09-30T14:14:41.132802+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777682 whereas allowed drift is 5000000
+2026-09-30T14:14:43.166516+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777683 with drift 1000000
+2026-09-30T14:15:09.241366+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777710 whereas allowed drift is 5000000
+2026-09-30T14:15:11.282450+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777711 with drift 1000000
+2026-09-30T14:15:37.211858+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777738 whereas allowed drift is 5000000
+2026-09-30T14:15:39.256841+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777739 with drift 1000000
+2026-09-30T14:16:05.660257+00:00
+--ATTENTION--
+Time stalled at 4035834688
+2026-09-30T14:16:06.269254+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777766 with drift 1000000
+2026-09-30T14:16:32.166582+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777793 whereas allowed drift is 5000000
+2026-09-30T14:16:34.207479+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777794 with drift 1000000
+2026-09-30T14:17:00.133949+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777821 whereas allowed drift is 5000000
+2026-09-30T14:17:02.166724+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777822 with drift 1000000
+2026-09-30T14:17:29.508992+00:00
+--ATTENTION--
+Time stalled at 4119834688
+2026-09-30T14:17:30.538568+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777850 with drift 1000000
+2026-09-30T14:17:42.156140+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777863 whereas allowed drift is 5000000
+2026-09-30T14:17:44.198715+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777864 with drift 1000000
+2026-09-30T14:17:55.324231+00:00
+--ATTENTION--
+Time stalled at 4145834688
+2026-09-30T14:17:56.356668+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777876 with drift 1000000
+2026-09-30T14:18:23.301055+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777904 whereas allowed drift is 5000000
+2026-09-30T14:18:25.346276+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777905 with drift 1000000
+2026-09-30T14:18:51.305255+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790777932 whereas allowed drift is 5000000
+2026-09-30T14:18:53.346265+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777933 with drift 1000000
+2026-09-30T14:19:19.850026+00:00
+--ATTENTION--
+Time stalled at 4229834688
+2026-09-30T14:19:20.889560+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777960 with drift 1000000
+2026-09-30T14:19:20.988115+00:00
+--ATTENTION--
+Time stalled at 4230834688
+2026-09-30T14:19:22.033541+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777962 with drift 2000000
+2026-09-30T14:19:46.596796+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790777988 whereas allowed drift is 5000000
+2026-09-30T14:19:49.642320+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790777989 with drift 1000000
+2026-09-30T14:20:14.722264+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778015 whereas allowed drift is 5000000
+2026-09-30T14:20:16.760842+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778016 with drift 1000000
+2026-09-30T14:20:43.202016+00:00
+--ATTENTION--
+Time stalled at 18867392
+2026-09-30T14:20:44.796873+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778044 with drift 1000000
+2026-09-30T14:21:09.809294+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790778071 whereas allowed drift is 5000000
+2026-09-30T14:21:12.867783+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778072 with drift 1000000
+2026-09-30T14:21:37.894806+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790778099 whereas allowed drift is 5000000
+2026-09-30T14:21:40.940874+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778100 with drift 1000000
+2026-09-30T14:22:05.946411+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790778127 whereas allowed drift is 5000000
+2026-09-30T14:22:08.999417+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778128 with drift 1000000
+2026-09-30T14:22:33.033608+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778154 whereas allowed drift is 5000000
+2026-09-30T14:22:35.069881+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778155 with drift 1000000
+2026-09-30T14:23:01.106944+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778182 whereas allowed drift is 5000000
+2026-09-30T14:23:03.141647+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778183 with drift 1000000
+2026-09-30T14:23:29.107840+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778210 whereas allowed drift is 5000000
+2026-09-30T14:23:31.147413+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778211 with drift 1000000
+2026-09-30T14:23:57.700410+00:00
+--ATTENTION--
+Time stalled at 212867392
+2026-09-30T14:23:58.294472+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778238 with drift 1000000
+2026-09-30T14:24:24.294850+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778265 whereas allowed drift is 5000000
+2026-09-30T14:24:26.329267+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778266 with drift 1000000
+2026-09-30T14:24:52.362372+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778293 whereas allowed drift is 5000000
+2026-09-30T14:24:54.401763+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778294 with drift 1000000
+2026-09-30T14:25:20.368955+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778321 whereas allowed drift is 5000000
+2026-09-30T14:25:22.406124+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778322 with drift 1000000
+2026-09-30T14:25:47.295131+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778348 whereas allowed drift is 5000000
+2026-09-30T14:25:49.335131+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778349 with drift 1000000
+2026-09-30T14:26:15.176727+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778376 whereas allowed drift is 5000000
+2026-09-30T14:26:17.208876+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778377 with drift 1000000
+2026-09-30T14:26:43.290251+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778404 whereas allowed drift is 5000000
+2026-09-30T14:26:45.315215+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778405 with drift 1000000
+2026-09-30T14:27:11.333593+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790778432 whereas allowed drift is 5000000
+2026-09-30T14:27:13.361112+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790778433 with drift 1000000
