@@ -49,3 +49,20 @@
   coherente con los 244 bloques y la cabecera del segmento.
 - Evidencias: _08-memoria.spool.log y _08-experimento-cache.script.log.
 
+
+## Parte H: procesos de Oracle y Linux
+
+- LGWR tiene SPID 1379 en v$process y aparece como PID 1379,
+  db_lgwr_FREE, al consultar /proc dentro del contenedor.
+- docker top muestra los PID desde el anfitrión; pueden diferir
+  de los SPID que Oracle ve dentro del contenedor.
+- Se observaron cuatro archivadores ARCn y la base está en ARCHIVELOG.
+- La sesión SQLcl de C##OPS_RO tenía un proceso servidor con SPID 2658.
+  Al terminar esa conexión, la comprobación posterior no encontró
+  servidores dedicados.
+- Los recuentos se tomaron en momentos distintos y pueden variar.
+  Además, varios registros de procesos Oracle pueden compartir SPID.
+- No se deben sumar los RSS para calcular la memoria de la instancia:
+  se contabilizarían repetidamente páginas de memoria compartida.
+- Evidencias: _09-procesos.spool.log y _09-procesos-so.script.log.
+
