@@ -13,3 +13,22 @@
 - La restauración aún no se ha ejecutado; su duración no se ha medido.
   El tiempo del respaldo no es el tiempo de recuperación.
 
+
+## Parte E: arranque por etapas y alert log
+
+- En NOMOUNT, la instancia aparece STARTED y permite consultar
+  v$parameter. Consultar v$database produce ORA-01507.
+- En MOUNT, Oracle conoce los 16 datafiles mediante los control files,
+  pero consultar dba_tables produce ORA-01219.
+- En OPEN, la base queda READ WRITE. FREEPDB1 también se abre
+  automáticamente y dba_pdb_saved_states muestra su estado OPEN.
+- Evidencias: archivos terminados en _06-arranque-por-etapas.script.log,
+  _06-alert-log.script.log y _06-alert-contexto.script.log.
+- Los errores ORA-27300 a ORA-27303 examinados están fechados
+  el 2026-07-05. El caso chdir() aparece junto a ORA-07427:
+  cannot change directory to dbs. Son anteriores al laboratorio;
+  no aparecen nuevas coincidencias en los arranques del 2026-10-26
+  dentro del registro examinado.
+- El último arranque completa ALTER DATABASE OPEN y abre FREEPDB1
+  en lectura y escritura.
+
