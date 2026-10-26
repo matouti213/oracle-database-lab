@@ -1,0 +1,66 @@
+===== 1. SCOPE=MEMORY =====
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE
+-------------------- ------------ --------------------
+open_cursors	     400	  300
+
+1 row selected.
+
+===== 2. SCOPE=BOTH =====
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE	       UPDATE_COMMENT
+-------------------- ------------ -------------------- ----------------------------------------
+open_cursors	     500	  500		       Lab4: prueba SCOPE=BOTH
+
+1 row selected.
+
+-- Restaurar open_cursors a 300:
+
+System altered.
+
+===== 3. Parametro estatico: ORA-02095 esperado =====
+ALTER SYSTEM SET db_files = 300 SCOPE = MEMORY
+                 *
+ERROR at line 1:
+ORA-02095: specified initialization parameter cannot be modified
+Help: https://docs.oracle.com/error-help/db/ora-02095/
+
+
+-- Cambiar solo el SPFILE:
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE
+-------------------- ------------ --------------------
+db_files	     200	  300
+
+1 row selected.
+
+-- Eliminar el cambio pendiente:
+
+System altered.
+
+===== Verificacion final =====
+
+NAME		     EN_MEMORIA
+-------------------- ------------
+db_files	     200
+open_cursors	     300
+
+2 rows selected.
+
+
+SID										 NAME		      EN_SPFILE 	   ISSPEC
+-------------------------------------------------------------------------------- -------------------- -------------------- ------
+*										 db_files				   FALSE
+*										 open_cursors	      300		   TRUE
+
+2 rows selected.
+

@@ -1,0 +1,150 @@
+===== 1. SCOPE=MEMORY =====
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE
+-------------------- ------------ --------------------
+open_cursors	     400	  300
+
+1 row selected.
+
+===== 2. SCOPE=BOTH =====
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE	       UPDATE_COMMENT
+-------------------- ------------ -------------------- ----------------------------------------
+open_cursors	     500	  500		       Lab4: prueba SCOPE=BOTH
+
+1 row selected.
+
+-- Restaurar open_cursors a 300:
+
+System altered.
+
+===== 3. Parametro estatico: ORA-02095 esperado =====
+ALTER SYSTEM SET db_files = 300 SCOPE = MEMORY
+                 *
+ERROR at line 1:
+ORA-02095: specified initialization parameter cannot be modified
+Help: https://docs.oracle.com/error-help/db/ora-02095/
+
+
+-- Cambiar solo el SPFILE:
+
+System altered.
+
+
+NAME		     EN_MEMORIA   EN_SPFILE
+-------------------- ------------ --------------------
+db_files	     200	  300
+
+1 row selected.
+
+-- Eliminar el cambio pendiente:
+
+System altered.
+
+===== Verificacion final =====
+
+NAME		     EN_MEMORIA
+-------------------- ------------
+db_files	     200
+open_cursors	     300
+
+2 rows selected.
+
+
+SID										 NAME		      EN_SPFILE 	   ISSPEC
+-------------------------------------------------------------------------------- -------------------- -------------------- ------
+*										 db_files				   FALSE
+*										 open_cursors	      300		   TRUE
+
+2 rows selected.
+
+===== 4. Cambios no permitidos en memoria =====
+-- PROCESSES: se espera rechazo del cambio:
+ALTER SYSTEM SET processes = 250 SCOPE = MEMORY
+*
+ERROR at line 1:
+ORA-02097: parameter cannot be modified because specified value is invalid
+ORA-02095: specified initialization parameter cannot be modified
+Help: https://docs.oracle.com/error-help/db/ora-02097/
+
+
+-- MEMORY_SIZE: se espera ORA-62352:
+ALTER SYSTEM SET memory_size = 1600M SCOPE = MEMORY
+*
+ERROR at line 1:
+ORA-02097: parameter cannot be modified because specified value is invalid
+ORA-62352: cannot dynamically set MEMORY_SIZE if not set at startup
+Help: https://docs.oracle.com/error-help/db/ora-02097/
+
+
+===== 5. Parametros por PDB =====
+
+Session altered.
+
+
+System altered.
+
+
+CONTENEDOR   NAME		  EN_MEMORIA
+------------ -------------------- ------------
+FREEPDB1     open_cursors	  350
+
+1 row selected.
+
+-- PROCESSES desde la PDB: ORA-65040 esperado:
+ALTER SYSTEM SET processes = 300 SCOPE = SPFILE
+*
+ERROR at line 1:
+ORA-65040: Operation is not allowed from within a pluggable database.
+Help: https://docs.oracle.com/error-help/db/ora-65040/
+
+
+-- Restaurar la herencia del CDB:
+
+System altered.
+
+
+CONTENEDOR   NAME		  EN_MEMORIA
+------------ -------------------- ------------
+FREEPDB1     open_cursors	  300
+
+1 row selected.
+
+
+Session altered.
+
+===== 6. Parametro de sesion =====
+
+Session altered.
+
+
+AHORA_CON_FORMATO_D
+-------------------
+2026-10-26 20:36:23
+
+1 row selected.
+
+===== 7. Exportar configuracion a PFILE =====
+
+File created.
+
+
+File created.
+
+===== Comprobacion final en CDB$ROOT =====
+
+NAME		     EN_MEMORIA
+-------------------- ------------
+db_files	     200
+memory_size	     0
+open_cursors	     300
+processes	     200
+
+4 rows selected.
+
