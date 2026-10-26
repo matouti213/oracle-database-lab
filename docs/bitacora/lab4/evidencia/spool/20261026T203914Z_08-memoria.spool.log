@@ -1,0 +1,82 @@
+SQL Format Cleared
+== 1. Modelo de gestion de memoria ==
+
+NAME                                 DISPLAY_VALU
+------------------------------------ ------------
+db_cache_size                        0           
+memory_size                          0           
+memory_target                        0           
+pga_aggregate_limit                  2G          
+pga_aggregate_target                 512M        
+sga_max_size                         1536M       
+sga_target                           1536M       
+shared_pool_size                     0           
+== 2. Resumen de la SGA ==
+
+NAME                                         MB
+------------------------------------ ----------
+Fixed Size                                  4.8
+Variable Size                               560
+Database Buffers                            960
+Redo Buffers                                4.3
+== 3. Componentes de la SGA ==
+
+NAME                                         MB RES
+------------------------------------ ---------- ---
+Maximum SGA Size                         1529.1 No 
+Buffer Cache Size                           960 Yes
+Shared Pool Size                            528 Yes
+Startup overhead in Shared Pool           222.8 No 
+Shared IO Pool Size                          80 Yes
+Free SGA Memory Available                    16    
+Large Pool Size                              16 Yes
+Granule Size                                 16 No 
+Fixed SGA Size                              4.8 No 
+Redo Buffers                                4.3 No 
+Data Transfer Cache Size                      0 Yes
+Java Pool Size                                0 Yes
+Vector Memory Area Size                       0 No 
+In-Memory Area Size                           0 No 
+Streams Pool Size                             0 Yes
+== 4. Reparto dinamico de la SGA ==
+
+COMPONENT                       ACTUAL_MB     MIN_MB  FIJADO_MB    AJUSTES
+------------------------------ ---------- ---------- ---------- ----------
+DEFAULT buffer cache                  880        880          0          0
+shared pool                           528        528          0          0
+Shared IO Pool                         80         80         80          0
+large pool                             16         16          0          0
+== 5. Asesor de SGA ==
+
+    SGA_MB     FACTOR TIEMPO_BD_ESTIMADO LECTURAS_FISICAS_EST
+---------- ---------- ------------------ --------------------
+       768         .5                  1                15499
+      1152        .75                  1                15499
+      1536          1                  1                15499
+      1920       1.25                  1                15499
+      2304        1.5                  1                15499
+      2688       1.75                  1                15499
+      3072          2                  1                15499
+== 6. Estadisticas de PGA ==
+
+NAME                                      VALOR UNIDAD    
+------------------------------------ ---------- ----------
+aggregate PGA target parameter              512 MB        
+aggregate PGA auto target                 210.7 MB        
+total PGA inuse                           283.7 MB        
+total PGA allocated                       365.4 MB        
+maximum PGA allocated                     463.7 MB        
+over allocation count                         0           
+cache hit percentage                        100 percent   
+== 7. Los ocho procesos con mas PGA asignada ==
+
+PNAME    SPID           USADA_MB ASIGNADA_MB  MAXIMA_MB
+-------- ------------ ---------- ----------- ----------
+MMON     1406                7.7        37.7      108.2
+ARC0     1481               11.7        12.8       12.8
+ARC1     1483               11.7        12.7       12.7
+ARC2     1485               11.7        12.4       12.4
+ARC3     1487               11.7        12.4       12.4
+M002     1701                8.7        11.2       15.3
+M003     1705                  7         9.3       10.7
+Q001     1727                3.4         9.1        9.7

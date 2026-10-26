@@ -1,0 +1,191 @@
+33-2026-07-05T21:57:46.687759+00:00
+34- 1. For optimal performance, configure system with expected number 
+35- of pages for every supported system pagesize prior to the next 
+36- instance restart operation.
+37-2026-07-05T21:57:46.689850+00:00
+38- 2. Increase per process memlock (soft) limit to at least 1532MB
+39- to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+40-2026-07-05T21:57:46.691804+00:00
+41-**********************************************************************
+42-Using an SGA granule size of 16MB
+43-Memory protection keys NOT enabled.
+44-Hugetlbfs Dynamic SGA NOT enabled.
+45-2026-07-05T21:57:46.764216+00:00
+46-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_ora_613.trc:
+47-ORA-27167: Attempt to determine if Oracle binary image is stored on remote server failed
+48:ORA-27300: OS system dependent operation:parse_df failed with status: 2
+49-ORA-27301: OS failure message: No such file or directory
+50-ORA-27302: failure occurred at: parse failed
+51-ORA-27303: additional information: Filesystem      1K-blocks      Used Available Use% Mounted on
+52-fuse-overlayfs 1073217536 177137876 896079660  17% /
+53-LICENSE_MAX_SESSION = 0
+54-LICENSE_SESSIONS_WARNING = 0
+55-Using LOG_ARCHIVE_DEST_1 parameter default value as /opt/oracle/product/26ai/dbhomeFree/dbs/arch
+56-.... (PID:): Enable RFS client   [kcrlc.c:611]
+57-Autotune of undo retention is turned on. 
+58-Log buffer boundaries=(0xd0000000, 0xd0452000)
+59-IMODE=BR
+60-ILAT =35
+61-NOTE: Using default ASM root directory ASM
+62-Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+63-Version 23.26.3.0.0.
+--
+422-2026-07-05T21:59:27.620171+00:00
+423- 1. For optimal performance, configure system with expected number 
+424- of pages for every supported system pagesize prior to the next 
+425- instance restart operation.
+426-2026-07-05T21:59:27.622528+00:00
+427- 2. Increase per process memlock (soft) limit to at least 1532MB
+428- to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+429-2026-07-05T21:59:27.623848+00:00
+430-**********************************************************************
+431-Using an SGA granule size of 16MB
+432-Memory protection keys NOT enabled.
+433-Hugetlbfs Dynamic SGA NOT enabled.
+434-2026-07-05T21:59:27.692378+00:00
+435-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_ora_803.trc:
+436-ORA-27167: Attempt to determine if Oracle binary image is stored on remote server failed
+437:ORA-27300: OS system dependent operation:parse_df failed with status: 2
+438-ORA-27301: OS failure message: No such file or directory
+439-ORA-27302: failure occurred at: parse failed
+440-ORA-27303: additional information: Filesystem      1K-blocks      Used Available Use% Mounted on
+441-fuse-overlayfs 1073217536 179709448 893508088  17% /
+442-LICENSE_MAX_SESSION = 0
+443-LICENSE_SESSIONS_WARNING = 0
+444-Using LOG_ARCHIVE_DEST_1 parameter default value as /opt/oracle/product/26ai/dbhomeFree/dbs/arch
+445-.... (PID:): Enable RFS client   [kcrlc.c:611]
+446-Autotune of undo retention is turned on. 
+447-Log buffer boundaries=(0xd0000000, 0xd0452000)
+448-IMODE=BR
+449-ILAT =35
+450-NOTE: Using default ASM root directory ASM
+451-Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+452-Version 23.26.3.0.0.
+--
+819-2026-07-05T21:59:58.226594+00:00
+820- 1. For optimal performance, configure system with expected number 
+821- of pages for every supported system pagesize prior to the next 
+822- instance restart operation.
+823-2026-07-05T21:59:58.232675+00:00
+824- 2. Increase per process memlock (soft) limit to at least 1532MB
+825- to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+826-2026-07-05T21:59:58.235785+00:00
+827-**********************************************************************
+828-Using an SGA granule size of 16MB
+829-Memory protection keys NOT enabled.
+830-Hugetlbfs Dynamic SGA NOT enabled.
+831-2026-07-05T21:59:58.297118+00:00
+832-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_ora_1194.trc:
+833-ORA-27167: Attempt to determine if Oracle binary image is stored on remote server failed
+834:ORA-27300: OS system dependent operation:parse_df failed with status: 2
+835-ORA-27301: OS failure message: No such file or directory
+836-ORA-27302: failure occurred at: parse failed
+837-ORA-27303: additional information: Filesystem      1K-blocks      Used Available Use% Mounted on
+838-fuse-overlayfs 1073217536 180365844 892851692  17% /
+839-LICENSE_MAX_SESSION = 0
+840-LICENSE_SESSIONS_WARNING = 0
+841-Using LOG_ARCHIVE_DEST_1 parameter default value as /opt/oracle/product/26ai/dbhomeFree/dbs/arch
+842-.... (PID:): Enable RFS client   [kcrlc.c:611]
+843-Autotune of undo retention is turned on. 
+844-Log buffer boundaries=(0xd0000000, 0xd0452000)
+845-IMODE=BR
+846-ILAT =35
+847-NOTE: Using default ASM root directory ASM
+848-Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+849-Version 23.26.3.0.0.
+--
+1084-2026-07-05T22:01:58.684114+00:00
+1085- 1. For optimal performance, configure system with expected number 
+1086- of pages for every supported system pagesize prior to the next 
+1087- instance restart operation.
+1088-2026-07-05T22:01:58.688678+00:00
+1089- 2. Increase per process memlock (soft) limit to at least 1532MB
+1090- to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+1091-2026-07-05T22:01:58.692539+00:00
+1092-**********************************************************************
+1093-Using an SGA granule size of 16MB
+1094-Memory protection keys NOT enabled.
+1095-Hugetlbfs Dynamic SGA NOT enabled.
+1096-2026-07-05T22:01:58.749443+00:00
+1097-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_ora_1898.trc:
+1098-ORA-27167: Attempt to determine if Oracle binary image is stored on remote server failed
+1099:ORA-27300: OS system dependent operation:parse_df failed with status: 2
+1100-ORA-27301: OS failure message: No such file or directory
+1101-ORA-27302: failure occurred at: parse failed
+1102-ORA-27303: additional information: Filesystem      1K-blocks      Used Available Use% Mounted on
+1103-fuse-overlayfs 1073217536 180366872 892850664  17% /
+1104-LICENSE_MAX_SESSION = 0
+1105-LICENSE_SESSIONS_WARNING = 0
+1106-Using LOG_ARCHIVE_DEST_1 parameter default value as /opt/oracle/product/26ai/dbhomeFree/dbs/arch
+1107-.... (PID:): Enable RFS client   [kcrlc.c:611]
+1108-Autotune of undo retention is turned on. 
+1109-Log buffer boundaries=(0xd0000000, 0xd0452000)
+1110-IMODE=BR
+1111-ILAT =35
+1112-NOTE: Using default ASM root directory ASM
+1113-Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+1114-Version 23.26.3.0.0.
+--
+1403-2026-07-05T22:02:42.524082+00:00
+1404- 1. For optimal performance, configure system with expected number 
+1405- of pages for every supported system pagesize prior to the next 
+1406- instance restart operation.
+1407-2026-07-05T22:02:42.527936+00:00
+1408- 2. Increase per process memlock (soft) limit to at least 1532MB
+1409- to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+1410-2026-07-05T22:02:42.530262+00:00
+1411-**********************************************************************
+1412-Using an SGA granule size of 16MB
+1413-Memory protection keys NOT enabled.
+1414-Hugetlbfs Dynamic SGA NOT enabled.
+1415-2026-07-05T22:02:42.594867+00:00
+1416-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_ora_2351.trc:
+1417-ORA-27167: Attempt to determine if Oracle binary image is stored on remote server failed
+1418:ORA-27300: OS system dependent operation:parse_df failed with status: 2
+1419-ORA-27301: OS failure message: No such file or directory
+1420-ORA-27302: failure occurred at: parse failed
+1421-ORA-27303: additional information: Filesystem      1K-blocks      Used Available Use% Mounted on
+1422-fuse-overlayfs 1073217536 181162244 892055292  17% /
+1423-LICENSE_MAX_SESSION = 0
+1424-LICENSE_SESSIONS_WARNING = 0
+1425-Using LOG_ARCHIVE_DEST_1 parameter default value as /opt/oracle/product/26ai/dbhomeFree/dbs/arch
+1426-.... (PID:): Enable RFS client   [kcrlc.c:611]
+1427-Autotune of undo retention is turned on. 
+1428-Log buffer boundaries=(0xd0000000, 0xd0452000)
+1429-IMODE=BR
+1430-ILAT =35
+1431-NOTE: Using default ASM root directory ASM
+1432-Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+1433-Version 23.26.3.0.0.
+--
+1538-Stopping change tracking
+1539-replication_dependency_tracking turned off (no async multimaster replication found)
+1540-2026-07-05T22:02:50.231061+00:00
+1541-Opening with Resource Manager plan: DEFAULT_CDB_PLAN 
+1542-CLID: P
+1543-PDB$SEED(2):Autotune of undo retention is turned on. 
+1544-PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+1545-FREEPDB1(3):Autotune of undo retention is turned on. 
+1546-2026-07-05T22:02:52.546495+00:00
+1547-FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+1548-Completed: Pluggable database FREEPDB1 opened read write 
+1549-Completed: ALTER DATABASE OPEN
+1550-2026-07-05T22:02:54.442166+00:00
+1551-Errors in file /opt/oracle/diag/rdbms/free/FREE/trace/FREE_j002_2759.trc:
+1552-ORA-07427: spstp: cannot change directory to dbs.
+1553:ORA-27300: OS system dependent operation:chdir() failed with status: 2
+1554-ORA-27301: OS failure message: No such file or directory
+1555-ORA-27302: failure occurred at: spstp:9
+1556-ORA-27303: additional information: error returned by chdir() is 2
+1557-2026-10-26T20:17:05.511944+00:00
+1558-Adjusting the default value of parameter "parallel_max_servers" from 0 to 1.
+1559-Starting ORACLE instance (normal) (OS id: 32)
+1560-2026-10-26T20:17:05.521876+00:00
+1561-****************************************************
+1562- Sys-V shared memory will be used for creating SGA 
+1563- ****************************************************
+1564-2026-10-26T20:17:05.522370+00:00
+1565-**********************************************************************
+1566-2026-10-26T20:17:05.522395+00:00
+1567-Dump of system resources acquired for SHARED GLOBAL AREA (SGA) 
+1568-

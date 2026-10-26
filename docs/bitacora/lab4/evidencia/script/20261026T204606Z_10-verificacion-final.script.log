@@ -1,0 +1,32 @@
+== Respaldo ==
+[OK] Backup integro: backups/20261026T174113Z_lab3-final
+== Correcciones y datos ==
+[OK] Tablespaces de negocio (5)
+[OK] Datafiles fuera de carpeta estandar (0)
+[OK] Archivos cuya ruta real sale del volumen (0)
+[OK] Cuentas ADMIN con autenticacion distinta de NONE (0)
+[OK] Estudiantes/asignaturas/matriculas (20000/40/60000)
+[OK] 8181 no se publica
+== Instancia y parametros ==
+[OK] CDB abierta (READWRITE)
+[OK] FREEPDB1 abierta (READWRITE)
+[OK] C##OPS_RO comun (YES)
+[OK] open_cursors restaurado (300)
+[OK] db_files sin cambio pendiente (FALSE)
+== Evidencias y Git ==
+[OK] Evidencia 00
+[OK] Evidencia 01
+[OK] Evidencia 02
+[OK] Evidencia 03
+[OK] Evidencia 04
+[OK] Evidencia 05
+[OK] Evidencia 06
+[OK] Evidencia 07
+[OK] Evidencia 08
+[OK] Evidencia 09
+[OK] PFILE en Git: initFREE_lab4.ora
+[OK] PFILE en Git: initFREE_lab4_memoria.ora
+[OK] config/.env fuera de Git
+[OK] backups/ fuera de Git
+
+RESULTADO: TODO OK en las comprobaciones tecnicas.

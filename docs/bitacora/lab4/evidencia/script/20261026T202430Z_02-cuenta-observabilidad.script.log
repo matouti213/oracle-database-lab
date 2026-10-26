@@ -1,0 +1,24 @@
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+== Verificacion de la cuenta ==
+
+    CON_ID CONTENEDOR	USERNAME     COM ACCOUNT_STATUS
+---------- ------------ ------------ --- --------------------------------
+	 1 CDB$ROOT	C##OPS_RO    YES OPEN
+	 3 FREEPDB1	C##OPS_RO    YES OPEN
+
+2 rows selected.
+

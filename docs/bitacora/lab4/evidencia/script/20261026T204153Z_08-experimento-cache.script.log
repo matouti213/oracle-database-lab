@@ -1,0 +1,14 @@
+===== 1. Tamano de la tabla =====
+
+TABLE_NAME	       NUM_ROWS     BLOCKS AVG_ROW_LEN
+-------------------- ---------- ---------- -----------
+ACA_ESTUDIANTES 	  20000        244	    76
+===== 2. Vaciar la cache del laboratorio =====
+===== 3. Ejecutar la misma consulta dos veces =====
+Ronda 1 (cache fria)	  filas ACTIVO=17600 | lecturas logicas=355 | lecturas fisicas=261
+Ronda 2 (cache caliente)  filas ACTIVO=17600 | lecturas logicas=247 | lecturas fisicas=0
+===== 4. Bloques de la tabla en cache =====
+
+OBJECT_NAME	     BLOQUES_EN_CACHE
+-------------------- ----------------
+ACA_ESTUDIANTES 		  245

@@ -1,0 +1,33 @@
+SQL Format Cleared
+== 1. INSTANCIA: procesos y memoria ==
+
+INSTANCE_NAME    HOST_NAME      VERSION_FULL      STATUS       DATABASE_STATUS   ARRANCADA          
+---------------- -------------- ----------------- ------------ ----------------- -------------------
+FREE             91dd6fc398d8   23.26.3.0.0       OPEN         ACTIVE            2026-10-26 20:17:05
+== 2. BASE DE DATOS: archivos persistentes ==
+
+      DBID NAME             DB_UNIQUE_NAME                 CDB LOG_MODE     OPEN_MODE            PLATFORM_NAME          CREADA    
+---------- ---------------- ------------------------------ --- ------------ -------------------- ---------------------- ----------
+1509902213 FREE             FREE                           YES ARCHIVELOG   READ WRITE           Linux x86 64-bit       2026-07-05
+== 3. Contenedor, servicio, usuario y sesion ==
+
+CONTENEDOR   SERVICIO         USUARIO      SID   
+------------ ---------------- ------------ ------
+CDB$ROOT     free             C##OPS_RO    215   
+== 4. Servicios ==
+
+    CON_ID NAME             NETWORK_NAME        
+---------- ---------------- --------------------
+         1 SYS$BACKGROUND                       
+         1 SYS$USERS                            
+         1 free             free                
+         1 freeXDB          freeXDB             
+         3 freepdb1         freepdb1            
+== 5. Archivos de la base de datos ==
+
+TIPO                     N         MB
+--------------- ---------- ----------
+datafiles               16       4149
+tempfiles                3         60
+redo (miembros)          3           
+control files            2           

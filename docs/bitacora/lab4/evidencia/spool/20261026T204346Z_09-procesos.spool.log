@@ -1,0 +1,51 @@
+SQL Format Cleared
+== 1. Procesos Oracle y procesos Linux ==
+
+TIPO        PROCESOS_ORACLE PROCESOS_LINUX
+----------- --------------- --------------
+background               86             53
+servidor                  7              7
+== 2. Procesos principales y su SPID ==
+
+PNAME  SPID     DESCRIPTION                                     
+------ -------- ------------------------------------------------
+PMON   1330     process cleanup                                 
+LREG   1396     Listener Registration                           
+SMON   1385     System Monitor Process                          
+DBW0   1377     db writer process 0                             
+LGWR   1379     Redo etc.                                       
+CKPT   1381     checkpoint                                      
+MMON   1406     Manageability Monitor Process                   
+MMNL   1410     Manageability Monitor Process 2                 
+RECO   1394     distributed recovery                            
+ARC0   1481     Archival Process 0                              
+CJQ0   1687     Job Queue Coordinator                           
+CLMN   1334     process cleanup                                 
+DIA0   1374     diagnosibility process 0                        
+DIAG   1360     diagnosibility process                          
+MMAN   1352     Memory Manager                                  
+PMAN   1372     process manager                                 
+PSP0   1338     process spawner 0                               
+VKTM   1342     Virtual Keeper of TiMe process                  
+== 3. Archivadores activos y modo de la base ==
+
+LOG_MODE
+------------
+ARCHIVELOG
+
+PROCESOS_ARCN
+-------------
+            4
+== 4. Mi sesion y su proceso servidor ==
+
+       SID    SERIAL# USERNAME     MACHINE              PROGRAM                            SPID    
+---------- ---------- ------------ -------------------- ---------------------------------- --------
+       219      61260 C##OPS_RO    MSI-AMINE            SQLcl                              2658    
+== 5. Sesiones de usuario ==
+
+       SID USERNAME     STATUS   MACHINE              PROGRAM                            SPID    
+---------- ------------ -------- -------------------- ---------------------------------- --------
+        55              ACTIVE   91dd6fc398d8         oracle@91dd6fc398d8 (J000)         2401    
+       208              ACTIVE   91dd6fc398d8         oracle@91dd6fc398d8 (J001)         2403    
+       219 C##OPS_RO    ACTIVE   MSI-AMINE            SQLcl                              2658    
+       220              ACTIVE   91dd6fc398d8         oracle@91dd6fc398d8 (J002)         2651    
