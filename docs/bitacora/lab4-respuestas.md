@@ -32,3 +32,20 @@
 - El último arranque completa ALTER DATABASE OPEN y abre FREEPDB1
   en lectura y escritura.
 
+
+## Parte G: memoria y cache
+
+- Modelo ASMM: memory_size=0, memory_target=0 y sga_target=1536M.
+  La PGA se gestiona aparte con pga_aggregate_target=512M.
+- ACA_ESTUDIANTES tiene 20000 filas y 244 bloques según sus estadísticas.
+- Ambas rondas devuelven 17600 estudiantes ACTIVO.
+- Ronda fría: 355 lecturas lógicas y 261 físicas.
+- Ronda caliente: 247 lecturas lógicas y 0 físicas.
+- Tasa de acierto de la segunda ronda: 1 - 0/247 = 100 %.
+- Las estadísticas medidas son de la sesión, no exclusivamente de la
+  tabla. El exceso de lecturas de la primera ronda puede incluir
+  trabajo interno de preparación y consultas al diccionario.
+- Tras las consultas hay 245 buffers de la tabla en v$bh,
+  coherente con los 244 bloques y la cabecera del segmento.
+- Evidencias: _08-memoria.spool.log y _08-experimento-cache.script.log.
+
