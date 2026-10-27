@@ -1,3 +1,20 @@
+-- JUSTIFICACION CON EVIDENCIA PROPIA — Amine, Issue #9, 27/10/2026
+-- Referencias: evidencia 03 (20261026T231104Z), 05 (20261026T231234Z), 06 (20261027T135525Z).
+-- + UX_CLI_DNI: Q13, 1486 -> 3 lecturas; ORA-00001 demuestra unicidad (03).
+-- + IX_PED_CLI_FEC_CUB: Q7, 15 -> 7 -> 3 lecturas, sin acceso a tabla (03).
+-- - IX_PED_CLIENTE: prefijo cubierto por el nuevo indice; NO usado con la propuesta (06).
+-- + IX_PED_PENDIENTES: 20000 entradas/54 hojas frente a 1000000/2933 de estado-fecha;
+--   Q12, 239 frente a 246 lecturas (03). No se afirma que todo UPDATE sea mas barato.
+-- + IX_PED_CP: Q3 devuelve 102 filas y pasa de 5232 a 106 lecturas con literal correcto (05);
+--   usado en la carga observada (06).
+-- - IX_PED_IMPORTE: NO usado en la ventana probada; Q2 conserva 318 lecturas al hacerlo
+--   INVISIBLE (06). Una prueba corta no demuestra ausencia universal de uso.
+-- Coste por fila con 4/9/5 indices en PEDIDO: INSERT 10.2/20.2/12.1 bloques;
+-- UPDATE estado 2/6/8.1; UPDATE importe 6/6/6; DELETE 10.1/20.1/10.1 (06).
+-- Se acepta el mayor coste de UPDATE estado a cambio del servicio de las consultas objetivo.
+-- Frecuencias de consultas en el comentario original: supuestos del enunciado, no tasas medidas.
+-- Esta edicion SOLO ANADE COMENTARIOS. V005 ya esta aplicada: NO volver a ejecutarla.
+-- ============================================================================
 -- database/migrations/V005__indices_tiendasur.sql
 -- El diseño de índices de TiendaSur que sale del protocolo de cinco preguntas (Lab 5, Parte G; Actividad 3.2):
 --   + ux_cli_dni          Q13 (500/s): busca por DNI y además GARANTIZA que no se repite (antes lo controlaba la aplicación)
