@@ -30,3 +30,12 @@ pero sigo en esa cosa donde hay que modificar
 - **Propósito:** Quería guardar el archivo y volver a la terminal de Ubuntu.
 - **Qué hace:** Ctrl + O guarda el archivo, Enter confirma el nombre y Ctrl + X cierra nano.
 - **Evidencia de ejecución:** no aplica
+
+## Entrada 2
+- **Herramienta:** ChatGPT
+- **Prompt (literal, copiado tal cual):** elige lo que quieres y dame que pongo para terminar la lista
+- **Código recibido:** Comando de comprobación incluido debajo.
+- **Dónde lo usé:** Parte J, simulacro S1–S22 de docs/bitacora/lab6-respuestas.md.
+- **Propósito:** Pedí las respuestas del simulacro y la parte del laboratorio asociada a cada pregunta.
+- **Qué hace:** ChatGPT propuso las 22 respuestas. El comando compara la numeración del archivo con la secuencia S1–S22.
+- **Evidencia de ejecución:** La terminal mostró «OK: S1 a S22 en orden y sin duplicados».
