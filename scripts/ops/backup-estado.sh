@@ -2,6 +2,7 @@
 # Copia en frío del volumen y de los archivos externos.
 set -euo pipefail
 source scripts/deployment/env/00-config.sh
+source scripts/ops/cabecera.sh "backup-estado-${1:-}" || exit 2
 
 ETIQUETA="${1:?Uso: backup-estado.sh <etiqueta>}"
 [[ "$ETIQUETA" =~ ^[a-z0-9][a-z0-9-]*$ ]] || {
